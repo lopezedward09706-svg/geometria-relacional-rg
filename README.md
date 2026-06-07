@@ -7,13 +7,14 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![Validación RG](https://img.shields.io/badge/Validación_RG-20%2F20-brightgreen)](validadores/validador_rg_v2.py)
 [![arXiv](https://img.shields.io/badge/arXiv-próximamente-red)]()
 
 ---
 
 ## 🧠 ¿Qué es la Geometría Relacional?
 
-> *“El universo no nació de una explosión. NADA ES TODO, Y TODO ES NADA. La nada se compara consigo misma y se dio cuenta de que existía.”*  
+> *"El universo no nació de una explosión. NADA ES TODO, Y TODO ES NADA. La nada se compara consigo misma y se dio cuenta de que existía."*  
 > — Edward P. López
 
 La **Geometría Relacional (RG)** es una hipótesis unificada de la física fundamental que parte de un único principio: la **auto‑comparación del Silencio Armónico**. No requiere constantes arbitrarias, condiciones iniciales ni singularidades. La existencia emerge como una consecuencia lógica de la auto‑identidad del vacío.
@@ -36,16 +37,14 @@ Este repositorio contiene la primera implementación computacional de la **Ecuac
 
 ```bash
 # Clona el repositorio
-git clone https://github.com/tuusuario/geometria-relacional.git
-cd geometria-relacional
+git clone https://github.com/lopezedward09706-svg/geometria-relacional-rg.git
+cd geometria-relacional-rg
 
 # Instala las dependencias
 pip install -r simulaciones_python/requirements.txt
 
-# Ejecuta el simulador
-python simulaciones_python/simulador_rg_v07.py
+# Ejecuta el validador (20/20 ecuaciones)
+python validadores/validador_rg_v2.py
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
-[![Validación RG](https://img.shields.io/badge/Validación_RG-20%2F20-brightgreen)](validadores/validador_rg_v2.py)
-[![arXiv](https://img.shields.io/badge/arXiv-próximamente-red)]()
+# Ejecuta el simulador del electrón
+python simulaciones_python/simulador_rg_v07.py
