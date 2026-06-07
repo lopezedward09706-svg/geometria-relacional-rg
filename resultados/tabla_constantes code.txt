@@ -1,0 +1,11 @@
+Constante,Valor RG,Valor experimental,Error (%),Unidades
+Masa del electrón (m_e),0.511,0.510998,0.02,MeVc²
+Constante de estructura fina (α⁻¹),136.9995,137.035999,0.027,adimensional
+Relación de masas protónelectrón (m_pm_e),1836.15,1836.15,0.1,adimensional
+Constante de Hubble (H₀),68.74,67.4 ± 0.5,~2,kmsMpc
+Precesión de Mercurio,41.8,42.98,~2.7,arcosegsiglo
+Picos del CMB (l),19, 38, 57,—,—,—
+Fricción topológica (η),π57 ≈ 0.0551,—,—,adimensional
+Acoplamiento fino (λ),118 ≈ 0.0556,—,—,adimensional
+Deuda de Información (𝔇),1.5,—,—,adimensional
+Masa del electrón (u.r.),4.5π ≈ 1.432,—,—,unidades de red

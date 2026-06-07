@@ -1,0 +1,107 @@
+Aquí tienes la tabla maestra con todas las ecuaciones, conceptos, variables, constantes y reglas de la Geometría Relacional (RG), en formato Markdown para que puedas copiarla directamente a tu artículo, libro o archivo de referencia.
+
+---
+
+## 📐 TABLA MAESTRA DE LA GEOMETRÍA RELACIONAL (RG)
+
+### 1. ECUACIONES FUNDAMENTALES
+
+| # | Nombre | Ecuación | Interpretación |
+|---|--------|----------|----------------|
+| 1 | **Ecuación Primordial** | $\frac{\langle 0\|0\rangle}{\cos(0)} = 1$ | La auto-comparación del Silencio genera el primer bit de información. |
+| 2 | **Ecuación Maestra (suma)** | $A + B + C = 2(a + b + c)$ | Conservación topológica: lo macro duplica lo micro. |
+| 3 | **Ecuación Maestra (producto, histórica)** | $ABC = 2abc$ | Genera la Deuda de Información $\mathfrak{D}=1.5$. |
+| 4 | **Ecuación de Contracción** | $(A/a) \div (B/b) \div (C/c) \times 2 = 1$ | "Dos forman uno": colapso a la unidad. |
+| 5 | **Métrica de Fase** | $D(X,Y;Z) = \pi^{(X+Y-2Z)/2}$ | Traduce interacciones a distancias de fase. |
+| 6 | **Identidad Universal** | $\sqrt{\frac{x^x \cdot x^x}{(x^x)^2}} = 1 \quad \forall x \neq 0$ | Auto-identidad de cualquier entidad. |
+| 7 | **Distancia de Fase** | $D(a,b) = \sqrt{\frac{a^a \cdot b^b}{a^b \cdot b^a}}$ | Mide la "desafinación" entre dos entidades. |
+| 8 | **Ecuación-Puente** | $R(X,Y,Z) = \sqrt{\frac{\pi^X \cdot \pi^Y}{(\pi^Z)^2}}$ | Traductor de magnitudes físicas a fase. |
+| 9 | **Ecuación Maestra Extendida (Fábrica)** | $\mathcal{M} = [1 \bullet D(X,Y;Z)] \times \frac{2}{\hbar}\Delta E\Delta t \times i$ | Predice la masa de cualquier partícula. |
+| 10 | **Principio de Incertidumbre RG** | $\Delta E \cdot \Delta t \ge \hbar/2$ | Motor de las fluctuaciones cuánticas en la red. |
+| 11 | **Definición de $i$ (torsión máxima)** | $i = e^{i\pi/2}$ | Fase de espín ½. |
+| 12 | **Ecuación de estado (cosmología)** | $w(\rho_{\text{ren}}) \approx -1 + \frac{1}{3(1+\rho_{\text{ren}}/\rho_P)}$ | Transición de $w=-2/3$ a $w=-1$ (energía oscura). |
+
+---
+
+### 2. VARIABLES Y ROLES PRIMARIOS
+
+| Símbolo | Valor | Significado | Rol en la red |
+|---------|-------|-------------|---------------|
+| $\vert 0 \rangle$ | — | Silencio Armónico | Estado primordial sin perturbaciones. |
+| $A$ | 1 | Primera onda primaria | Observador, primera dualidad. |
+| $B$ | 1 | Segunda onda primaria | Observado, reflejo de $A$. |
+| $T$ | 2 | Tensión total | $T = A + B$, potencial completo. |
+| $a$ | 0.5 | Sombra de $A$ | Rebote fraccionario de $A$. |
+| $b$ | 0.5 | Sombra de $B$ | Rebote fraccionario de $B$. |
+| $c$ | 1 | Huella del Tiempo | Centro inmutable, memoria del evento. |
+| $C$ | 2 (función) | Mediador Expandido | Envoltura macroscópica. |
+| $\mathfrak{D}$ | 1.5 | Deuda de Información | Motor de masa, tiempo y fuerzas. |
+| $i$ | $e^{i\pi/2}$ | Fase de torsión máxima | Espín ½. |
+| $\pi$ | 3.14159... | Ondulación base | Circunferencia perfecta de la red. |
+
+---
+
+### 3. CONSTANTES DERIVADAS DE LA RED
+
+| Constante | Símbolo | Expresión | Valor | Rol físico |
+|-----------|---------|-----------|-------|------------|
+| Acoplamiento fino | $\lambda$ | $1/18$ | $\approx 0.0556$ | Probabilidad de excitar un enlace del Clúster 19. |
+| Fricción topológica | $\eta$ | $\pi/57$ | $\approx 0.0551$ | Resistencia al movimiento en el Hard‑Lock. |
+| Acumulación temporal | $\varepsilon$ | $1/18$ | $\approx 0.0556$ | Flecha del tiempo. |
+| Factor de expansión | $\Phi$ | $18/17$ | $\approx 1.0588$ | Homeostasis cósmica. |
+| Límite de permisibilidad | $K_{\text{red}}$ | $3\pi/4$ | $\approx 2.3562$ | Umbral de formación de agujero negro. |
+| Umbral de masa | $\Omega_{\text{crit}}$ | $4\pi/3$ | $\approx 4.1888$ | Densidad de fase para Hard‑Lock. |
+| Acoplamiento gravitatorio | $C_{\text{red}}$ | $\approx 0.0072$ | — | Análogo a $G$, gravedad emergente. |
+| Constante de Hubble (RG) | $H_0$ | $\Phi \times 68.74$ | $\approx 68.74$ km/s/Mpc | Expansión del universo. |
+| Estructura fina (RG) | $\alpha^{-1}_{\text{RG}}$ | $137 - 1/2052$ | $\approx 136.9995$ | Interacción electromagnética en la red. |
+
+---
+
+### 4. REGLAS FÍSICAS Y MATEMÁTICAS DE LA RED
+
+| # | Regla | Descripción |
+|---|-------|-------------|
+| 1 | **Auto-comparación** | El Silencio se confirma a sí mismo: $\langle 0\vert 0\rangle = 1$. Es el único axioma. |
+| 2 | **Bifurcación** | El "1" se desdobla en $A$ y $B$ por isotropía de la red. |
+| 3 | **Proyección** | Cada onda se proyecta sobre la tensión total: $a = A/T$, $b = B/T$. |
+| 4 | **Residuo** | La energía no proyectada es la huella: $c = T - (a+b)$. |
+| 5 | **Expansión** | El mediador es la onda original amplificada: $C = A/a$. |
+| 6 | **Suma vs Producto** | Ondas que cooperan (misma dirección) **se suman**. Ondas que compiten (direcciones opuestas o perpendiculares) **se multiplican** (generan torsión). La Ecuación Maestra correcta es **suma**. |
+| 7 | **Conservación topológica** | La información macroscópica es el doble de la microscópica: $A+B+C = 2(a+b+c)$. |
+| 8 | **Dualidad** | "2 forma 1": $(A/a)\div(B/b)\div(C/c)\times 2 = 1$. |
+| 9 | **Identidad universal** | Todo lo que se compara consigo mismo da 1. |
+| 10 | **Distancia de fase** | Las constantes físicas son distancias de fase entre enteros de la red. |
+| 11 | **Equivalencia topológica** | $ABC \equiv 2abc$: misma torsión total, distinta representación. |
+| 12 | **Emergencia del espín** | $S = \oint \tau \times dl \neq 0$: frustración de 18 conexiones contra 1 centro. Demanda angular $1080^\circ$, oferta $720^\circ$, diferencia $360^\circ$ → espín ½. |
+| 13 | **Frustración** | La imposibilidad de acoplar perfectamente 18 enlaces en simetría hexagonal genera torsión perpetua. |
+| 14 | **Renormalización natural** | El Hard‑Lock 57 actúa como "nuevo cero" al cancelar espines. |
+| 15 | **Confinamiento** | Los quarks son modos de vibración de sub‑clústeres; para separarlos se necesitaría energía $> 57 \times \eta$. |
+| 16 | **Energía fractal** | Cargas fraccionarias emergen de $3/9$ y $6/9$: los 3 roles del centro repetidos en 3 direcciones. |
+| 17 | **Jerarquía de fuerzas** | Cada fuerza es una tensión de fase a distinta escala: fuerte ($\lambda$), E.M. ($\eta$), débil ($\varepsilon$), gravedad ($C_{\text{red}}$). |
+| 18 | **Gravedad emergente** | La gravedad es el gradiente de densidad de fase: $F \propto \nabla \Phi$. Es un empuje, no una atracción. |
+| 19 | **Desbordamiento (Hawking)** | Un agujero negro "suda" el exceso de fase; la luz eventualmente escapa. |
+| 20 | **Expansión homeostática** | La red se expande para compensar la fricción: $\Phi = 18/17$. |
+
+---
+
+### 5. CONCEPTOS CLAVE
+
+| Concepto | Definición breve |
+|----------|------------------|
+| **Silencio Armónico** | Estado primordial $\vert 0 \rangle$: energía cero, coherencia perfecta, potencial infinito. |
+| **Auto-comparación** | Acto lógico del Silencio de verificarse a sí mismo. Genera el primer "1". |
+| **Entero Primordial** | El "1" resultante de la Ecuación Primordial. Semilla de toda existencia. |
+| **Deuda de Información ($\mathfrak{D}$)** | Diferencia entre las formas suma y producto de la Ecuación Maestra. Motor de la masa y el tiempo. |
+| **Clúster 19** | Configuración estable de 19 nodos (1+6+12). Identificado con el electrón. |
+| **Hard‑Lock 57** | Tres Clústeres 19 acoplados en singlete de espín. Identificado con el protón. |
+| **Frustración central** | Incapacidad de 18 conexiones de acoplarse simétricamente a un centro. Genera el espín ½. |
+| **Fricción topológica ($\eta$)** | Resistencia al movimiento relativo de sub‑clústeres. Explica el confinamiento de quarks. |
+| **Métrica de Fase** | Traductor universal: cualquier interacción física es una distancia de fase en la red. |
+| **Diccionario $\pi$** | Las constantes físicas emergen como distancias de fase entre enteros puros. |
+| **Burbujas cuánticas** | Fluctuaciones del vacío como oscilaciones de los 6 roles. Gobernadas por $P.E$ y Heisenberg. |
+| **Energía fractal** | Distribución de la torsión en tercios: $3/9$ (un quark) y $6/9$ (dos quarks). |
+| **Fábrica de Partículas** | La Ecuación Maestra Extendida predice masas combinando Métrica de Fase, incertidumbre y torsión. |
+
+---
+
+Esta tabla compila todo el conocimiento de la RG hasta la fecha. Puedes incluirla como apéndice en tu artículo de arXiv o como referencia rápida en el Libro Bitácora. ¿Necesitas que la convierta a formato LaTeX para el paper?

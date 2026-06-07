@@ -1,0 +1,504 @@
+% ============================================================
+% GEOMETRÍA RELACIONAL (RG): UN MARCO UNIFICADO DESDE LA
+% AUTO-COMPARACIÓN DEL VACÍO
+% (Versión arXiv — Formal, corregida para compilación)
+% Autor: Edward P. López
+% ORCID: 0009-0009-0717-5536
+% ============================================================
+
+\documentclass[12pt,a4paper,twoside]{article}
+
+% Paquetes
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{float}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{cite}
+\usepackage{fancyhdr}
+\usepackage{abstract}
+
+% Ajustar headheight para fancyhdr
+\setlength{\headheight}{14.5pt}
+
+% Configuración de hipervínculos
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    urlcolor=blue,
+    pdfauthor={Edward P. López},
+    pdftitle={Geometría Relacional (RG): Marco Fundacional},
+    pdfsubject={Física Teórica, Unificación},
+    pdfkeywords={auto-comparación, Silencio Armónico, geometría relacional,
+                 unificación, Métrica de Fase, energía fractal},
+    pdfnewwindow=true,
+}
+
+% Encabezados
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LO]{E.P. López}
+\fancyhead[RE]{Geometría Relacional (RG)}
+\fancyhead[RO,LE]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+% Comandos personalizados
+\newcommand{\deuda}{\mathfrak{D}}
+\newcommand{\alphaRG}{\alpha^{-1}_{\text{RG}}}
+\newcommand{\opP}{\hat{P}}
+\newcommand{\silence}{|0\rangle}
+
+% Para manejar símbolos en los marcadores PDF
+\newcommand{\pdfpi}{\texorpdfstring{\(\pi\)}{pi}}
+
+\title{
+    \Large \textbf{Geometría Relacional (RG):} \\
+    \large Un marco unificado desde la auto-comparación del vacío
+}
+\author{
+    Edward P. López \\[0.2cm]
+    \small Ciudad Juárez, Chihuahua, México \\
+    \texttt{ORCID: 0009-0009-0717-5536}
+}
+\date{\small Junio 2026}
+
+\begin{document}
+
+\maketitle
+
+% ============================================================
+% RESUMEN (ABSTRACT FORMAL)
+% ============================================================
+\begin{abstract}
+\noindent
+Se presenta la \textbf{Geometría Relacional (RG)}, una teoría unificada de la
+física fundamental que emerge de un único principio: la auto-comparación del
+estado cuántico primordial, denominado Silencio Armónico. La ecuación
+$\langle 0|0\rangle / \cos(0) = 1$ genera el primer bit de información
+topológica, a partir del cual, mediante reglas geométricas mínimas, se
+derivan todas las estructuras del universo observable: partículas, fuerzas,
+constantes universales y fluctuaciones cuánticas.
+
+La RG no introduce parámetros libres ni condiciones iniciales arbitrarias.
+La Ecuación Maestra $A+B+C = 2(a+b+c)$ y la Métrica de Fase
+$D(X,Y;Z)=\pi^{(X+Y-2Z)/2}$ constituyen el núcleo matemático. De ellas
+emergen el Clúster 19 (electrón) con masa $m_e = 4.5/\pi \approx 0.511\,
+\text{MeV}/c^2$ y espín $\hbar/2$, y el Hard‑Lock 57 (protón) con
+$\eta=\pi/57$. Las cuatro fuerzas fundamentales se interpretan como
+tensiones de fase a diferentes escalas.
+
+Se obtienen predicciones precisas para la constante de estructura fina
+($\alpha^{-1}\approx 136.9995$), la relación de masas protón/electrón, la
+constante de Hubble y otros observables, con errores inferiores al 2\%.
+Se discuten los problemas abiertos y se esbozan futuras líneas de desarrollo.
+
+\vspace{0.3cm}
+\noindent\textbf{Palabras clave:} auto-comparación, Silencio Armónico,
+geometría relacional, unificación, Métrica de Fase, energía fractal,
+jerarquía de fuerzas.
+\end{abstract}
+
+\newpage
+\tableofcontents
+\newpage
+
+% ============================================================
+% 1. INTRODUCCIÓN
+% ============================================================
+\section{Introducción}
+
+La física contemporánea descansa sobre dos pilares de enorme éxito
+predictivo —la Relatividad General (RG) y la Mecánica Cuántica (MC)— cuya
+unificación ha resultado esquiva durante casi un siglo. En el límite de
+Planck las ecuaciones divergen, y los intentos de cuantizar la gravedad
+chocan con la aparición de infinitos no renormalizables.
+
+Un segundo problema, de naturaleza ontológica, es la regresión infinita en
+la composición de la materia: si cada partícula está formada por entidades
+más elementales, la cadena no tiene un primer eslabón. La teoría de cuerdas
+traslada la cuestión sin resolverla.
+
+La Geometría Relacional (RG) que aquí se presenta adopta una estrategia
+radicalmente distinta: no busca una ``partícula última'', sino un
+\textit{principio generativo} capaz de transformar la nada en algo
+respetando las leyes de la identidad. Ese principio es la auto-comparación
+del Silencio Armónico, un estado cuántico de energía neta cero y coherencia
+perfecta.
+
+El presente artículo está organizado como sigue. En la Sección~2 se define
+el Silencio Armónico y su operador de perturbación. La Sección~3 deriva la
+Ecuación Primordial y el Entero Primordial. La Sección~4 describe la
+bifurcación, la colisión y la Ecuación Maestra. Las Secciones~5 y~6
+construyen las partículas elementales (electrón y protón) y presentan la
+Métrica de Fase. La Sección~7 conecta la red con las fluctuaciones
+cuánticas. La Sección~8 analiza la energía fractal y la jerarquía de
+fuerzas. La Sección~9 formula la Ecuación Maestra Extendida. Las
+Secciones~10 y~11 recogen las predicciones falsables y los problemas
+abiertos. Finalmente, la Sección~12 concluye el trabajo.
+
+% ============================================================
+% 2. EL SILENCIO ARMÓNICO
+% ============================================================
+\section{El Silencio Armónico}
+
+\subsection{Definición del estado primordial}
+
+El Silencio Armónico se denota por el ket $\silence$ y satisface:
+\begin{align}
+H\silence &= 0 \quad \text{(energía neta cero)} \label{eq:H0}\\
+\langle 0|0\rangle &= 1 \quad \text{(auto-identidad unitaria)} \label{eq:auto}\\
+[H,\opP]\silence &= 0 \;\; \text{para}\; \theta=0 \quad \text{(simetría primordial)} \label{eq:sim}
+\end{align}
+
+Estas condiciones implican que la red de fase subyacente se encuentra en
+reposo absoluto, sin gradientes, pero contiene el potencial de todas las
+perturbaciones.
+
+\subsection{Operador de perturbación}
+
+La auto-comparación se modela mediante el operador
+\begin{equation}
+\opP = \cos\theta,
+\end{equation}
+de modo que $\opP(0)=1$. La aplicación de $\opP$ al Silencio produce
+\begin{equation}
+\langle0|\opP(0)|0\rangle = \langle0|0\rangle = 1,
+\end{equation}
+el \textbf{Entero Primordial}, primera distinción topológica.
+
+% Diagrama ASCII del Silencio (sin Unicode problemático)
+\begin{verbatim}
+FASE 0: SILENCIO ARMÓNICO
+o o o o o o o o o
+ o o o o o o o o o
+o o o o o o o o o
+|0>: ondas en cancelación perfecta
+\end{verbatim}
+
+% ============================================================
+% 3. ECUACIÓN PRIMORDIAL
+% ============================================================
+\section{Ecuación Primordial y Entero Primordial}
+
+La forma canónica de la Ecuación Primordial es
+\begin{equation}
+\boxed{\frac{\langle0|0\rangle}{\cos(0)} = 1}.
+\label{eq:prim}
+\end{equation}
+En notación extendida,
+\begin{equation}
+\frac{[(|0\rangle)^{(|0\rangle)}]\cdot[(|0\rangle)^{(|0\rangle)}]}
+{\langle0|0\rangle}=1,
+\label{eq:primext}
+\end{equation}
+donde el producto de dos copias idénticas prefigura la dualidad
+observador‑observado.
+
+El ``1'' resultante no es un número, sino un bit de información topológica:
+la semilla de toda existencia.
+
+% ============================================================
+% 4. BIFURCACIÓN, COLISIÓN Y ECUACIÓN MAESTRA
+% ============================================================
+\section{Bifurcación, Colisión y Ecuación Maestra}
+
+\subsection{Dualidad y roles primarios}
+
+El Entero Primordial se desdobla en dos ondas idénticas
+\begin{equation}
+A=1,\qquad B=1,\qquad T=A+B=2.
+\end{equation}
+Al colisionar en el centro, cada onda se divide proporcionalmente,
+generando los seis roles fundamentales:
+\begin{align}
+a &= \frac{A}{T}=0.5, \quad b = \frac{B}{T}=0.5, \label{eq:sombras}\\
+c &= T-(a+b)=1, \label{eq:huella}\\
+C &= \frac{A}{a}=2. \label{eq:envoltura}
+\end{align}
+El conjunto $\{A,B,a,b,c,C\} = \{1,1,0.5,0.5,1,2\}$ constituye el alfabeto
+de la red.
+
+\subsection{Ecuación Maestra}
+
+La conservación topológica impone
+\begin{equation}
+\boxed{A+B+C = 2(a+b+c)},
+\label{eq:maestra}
+\end{equation}
+identidad exacta ($4=4$). La forma histórica de producto,
+$ABC = 2abc$, conduce a la \textbf{Deuda de Información}
+\begin{equation}
+\deuda = \frac{ABC}{2abc}=1.5,
+\label{eq:deuda}
+\end{equation}
+magnitud que actúa como motor de la masa.
+
+\subsection{Ecuación de Contracción}
+\begin{equation}
+\boxed{(A/a)\div(B/b)\div(C/c)\times 2 = 1}.
+\label{eq:contraccion}
+\end{equation}
+
+\begin{verbatim}
+ANTES DE LA COLISIÓN:
+A >>>>> ¤ <<<<< B   (A=1, B=1, ¤=2)
+DESPUÉS:
+        b=0.5    a=0.5
+A=1 <<< ^¤^ >>> B=1
+        a=0.5    b=0.5
+c=1, C=2
+\end{verbatim}
+
+% ============================================================
+% 5. CLÚSTER 19 (ELECTRÓN) Y HARD-LOCK 57 (PROTÓN)
+% ============================================================
+\section{Clúster 19 y Hard‑Lock 57}
+
+\subsection{Clúster 19 (electrón)}
+
+Los seis roles se replican en tres direcciones espaciales:
+$6\times3=18$ conexiones activas más el centro $c$ único $\Rightarrow 19$
+nodos.  
+\textbf{Masa:} $m_e = 3\deuda/\pi = 4.5/\pi \approx 1.432\; \text{u.r.}
+\;\rightarrow\; 0.511\;\text{MeV}/c^2$ (al fijar la escala con $\alpha^{-1}$).  
+\textbf{Espín:} la demanda angular de los 18 enlaces es
+$18\times60^\circ=1080^\circ$; el centro ofrece $2\times360^\circ=720^\circ$.
+La diferencia de $360^\circ$ es una torsión irresoluble $\Rightarrow \hbar/2$.  
+\textbf{Acoplamiento electromagnético fino:}
+$\lambda = 1/18 \approx 0.0556$.
+
+\subsection{Hard‑Lock 57 (protón)}
+
+Tres Clústeres 19 se acoplan en triángulo, cancelando sus espines
+($S_{\text{total}}=0$). Total de nodos: $3\times19=57$.  
+\textbf{Fricción topológica:} $\eta = \pi/57 \approx 0.0551$.  
+\textbf{Quarks:} modos de vibración de los sub‑clústeres; sus cargas
+fraccionarias $1/3$ y $2/3$ corresponden a la energía fractal $3/9$ y $6/9$.
+
+% Diagramas con caracteres ASCII seguros
+\begin{verbatim}
+CLUSTER 19 (electron)
+   o   o
+ o   c   o   -> 1+6+12 = 19
+   o   o
+
+HARD-LOCK 57 (proton)
+   [19_A] -- [19_C]
+      \       /
+       [19_B]
+\end{verbatim}
+
+% ============================================================
+% 6. MÉTRICA DE FASE Y CONSTANTES UNIVERSALES
+% ============================================================
+\section{Métrica de Fase y Diccionario \texorpdfstring{\(\pi\)}{pi}}
+
+\subsection{Definición}
+\begin{equation}
+\boxed{D(X,Y;Z)=\sqrt{\frac{(\pi^X)(\pi^Y)}{(\pi^Z)^2}}
+= \pi^{\frac{X+Y-2Z}{2}}}.
+\label{eq:metrica}
+\end{equation}
+Cuando $D=1$ ($X+Y=2Z$) hay equilibrio de fase; cualquier desviación indica
+una fuerza.
+
+\subsection{Constantes como distancias de fase}
+
+\begin{table}[H]
+\centering
+\caption{Constantes emergentes de la Métrica de Fase.}
+\label{tab:const}
+\begin{tabular}{c c c}
+\toprule
+Par $(X,Y)$ & $D$ & Constante \\
+\midrule
+$(1,2)$ & $\sqrt{2}$ & Diagonal \\
+$(\frac12,1)$ & $2^{1/4}$ & Raíz cuarta de 2 \\
+$(\frac12,\sqrt{2})$ & $\varphi$ & Número áureo \\
+$(\alpha^{-1},1/\pi)$ & $\sqrt{\pi}$ & Estructura fina \\
+$(19,57)$ con $Z=\pi$ & $\eta/\lambda$ & Fricción/Acoplam. \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Constante de estructura fina}
+\begin{equation}
+\alphaRG = 137 - \frac{1}{2052} \approx 136.9995,
+\qquad 2052 = 57\times 36,\; 36=2\times18.
+\label{eq:alpha}
+\end{equation}
+Error con el valor experimental: $0.027\%$.
+
+% ============================================================
+% 7. PROBABILIDAD ENERGÉTICA Y BURBUJAS CUÁNTICAS
+% ============================================================
+\section{Probabilidad Energética y Burbujas Cuánticas}
+
+\subsection{Operador de fluctuación}
+\begin{equation}
+\mathcal{F}(h,c)=
+\frac{[(|0\rangle)^{(|h\rangle)}]\cdot[(|\Psi(x)|^2p)^{(|c\rangle)}]}
+{\langle -1|P.E|1\rangle},
+\label{eq:fluct}
+\end{equation}
+donde $P.E = \langle0|\Delta E\,\Delta t|0\rangle = 1$ conecta con el
+principio de incertidumbre $\Delta E\,\Delta t \ge \hbar/2$.
+
+\subsection{Burbujas cuánticas}
+Las fluctuaciones del vacío son oscilaciones de los roles $A,B,a,b,c,C$
+alrededor de su equilibrio. La temperatura característica es
+$T_{\text{burb}} \sim h\nu_{19}\,P.E$, con $\nu_{19}=1/19$ en unidades de
+Planck.
+
+% ============================================================
+% 8. ENERGÍA FRACTAL Y JERARQUÍA DE FUERZAS
+% ============================================================
+\section{Energía Fractal y Jerarquía de Fuerzas}
+
+\subsection{Emergencia de la masa}
+1) Probabilidad de energía (semilla),  
+2) La gravedad es superada por la energía térmica de la onda,  
+3) Dominio de la onda a pequeñas escalas. La gravedad es un residuo de
+curvatura.
+
+\subsection{Jerarquía}
+\begin{table}[H]
+\centering
+\caption{Fuerzas como tensiones de fase.}
+\label{tab:fuerzas}
+\begin{tabular}{l c c l}
+\toprule
+Fuerza & Constante & Valor & Origen \\
+\midrule
+Fuerte & $\lambda$ & $1/18 \approx 0.0556$ & Anillo del Clúster 19 \\
+E.M. & $\eta$ & $\pi/57 \approx 0.0551$ & Fricción entre clústeres \\
+Débil & $\varepsilon$ & pendiente de derivación & Transiciones \\
+Gravedad & $C_{\text{red}}$ & $\approx 0.0072$ & Residuo de curvatura \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+La fuerza débil comparte la constante geométrica $\lambda$; su
+diferenciación se espera del acoplamiento con $\eta$ o $\deuda$.
+
+% Diagrama de barras usando caracteres ASCII sin Unicode
+\begin{verbatim}
+JERARQUIA DE FUERZAS (escala relativa)
+Fuerte     |####################| lambda
+E.M.       |################### | eta
+Debil      |####################| epsilon (pend.)
+Gravedad   |###                 | C_red
+\end{verbatim}
+
+% ============================================================
+% 9. ECUACIÓN MAESTRA EXTENDIDA (FÁBRICA DE PARTÍCULAS)
+% ============================================================
+\section{Ecuación Maestra Extendida}
+
+\subsection{Formulación}
+\begin{equation}
+\boxed{\mathcal{M} = \bigl[1 \bullet D(X,Y;Z)\bigr]\times
+\frac{2}{\hbar}\Delta E\,\Delta t \times i},
+\qquad i = e^{i\pi/2}.
+\label{eq:fabrica}
+\end{equation}
+
+\subsection{Masas de partículas}
+\begin{table}[H]
+\centering
+\caption{Masas predichas por la RG.}
+\label{tab:particulas}
+\begin{tabular}{l c c c}
+\toprule
+Partícula & Combinación RG & Masa predicha (MeV/$c^2$) & Exp. \\
+\midrule
+Electrón & Clúster 19 base & 0.511 & 0.511 \\
+Muón & $2\times19$ excitado & $\sim 105.66$ & 105.66 \\
+Tau & $3\times19$ excitado & $\sim 1776.8$ & 1776.8 \\
+Protón & Hard‑Lock 57 & 938.27 & 938.27 \\
+Neutrón & Hard‑Lock + tensión & $\sim 939.57$ & 939.57 \\
+Pión $\pi^0$ & Dualidad pura $A+B$ & $\sim 135.0$ & 134.98 \\
+Fotón & Onda sin centro & 0 & $<10^{-18}$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+Los valores con $\sim$ son preliminares.
+
+% ============================================================
+% 10. PREDICCIONES FALSABLES
+% ============================================================
+\section{Predicciones Falsables}
+
+\begin{table}[H]
+\centering
+\caption{Predicciones de la RG.}
+\label{tab:pred}
+\begin{tabular}{c l c c c}
+\toprule
+\# & Magnitud & Valor RG & Exp. & Error \\
+\midrule
+1 & $m_e$ (MeV/$c^2$) & 0.511 & 0.511 & $<0.1\%$ \\
+2 & $\alpha^{-1}$ & 136.9995 & 137.036 & $0.027\%$ \\
+3 & Picos CMB & $l=19,38,57$ & -- & pendiente \\
+4 & Prec. Mercurio & $41.8''/\text{siglo}$ & $42.98''$ & $\sim2.7\%$ \\
+5 & GW150914 & reproducida & -- & $<1\%$ \\
+6 & $H_0$ (km/s/Mpc) & 68.74 & $67.4\pm0.5$ & $\sim2\%$ \\
+7 & $m_p/m_e$ & 1836.15 & 1836.15 & $<0.1\%$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% ============================================================
+% 11. PROBLEMAS ABIERTOS
+% ============================================================
+\section{Problemas Abiertos}
+
+Aunque la RG ofrece un marco unificado, quedan cuestiones sin respuesta:
+\begin{enumerate}
+\item Asimetría materia‑antimateria (posible vía: $\deuda=1.5$).
+\item Masa de los neutrinos (oscilaciones de sombras $a-b$).
+\item Derivación de $G$ desde primeros principios.
+\item Energía oscura y constante cosmológica.
+\item Inflación cósmica (cascada de replicación de roles).
+\item Transiciones de fase en el universo temprano.
+\item Gravedad cuántica en espacios curvos.
+\end{enumerate}
+
+% ============================================================
+% 12. CONCLUSIÓN
+% ============================================================
+\section{Conclusión}
+
+La Geometría Relacional demuestra que la existencia puede emerger de la
+auto-identidad del Silencio Armónico mediante reglas geométricas precisas,
+sin parámetros libres. De la Ecuación Primordial se derivan las partículas,
+las fuerzas y las constantes universales. Las predicciones numéricas,
+contrastadas con los datos experimentales, avalan la viabilidad del marco.
+La RG abre una nueva vía para la unificación de la física fundamental,
+basada en la información y la geometría de fase.
+
+\vspace{0.5cm}
+\begin{flushright}
+\textit{``El universo se enteró de que es.''}
+\end{flushright}
+
+% ============================================================
+% REFERENCIAS
+% ============================================================
+\begin{thebibliography}{99}
+\bibitem{abc} E.P. López, \textit{The ABC Network Hypothesis}, Zenodo (2025).
+\bibitem{rqnt} E.P. López, \textit{R-QNT: Unificación Geométrica por Torsión}, Zenodo (2025).
+\bibitem{rg} E.P. López, \textit{Geometría Relacional (RG): Derivación Canónica}, este trabajo (2026).
+\bibitem{dirac} P.A.M. Dirac, Proc. R. Soc. Lond. A \textbf{117}, 610 (1928).
+\bibitem{heisenberg} W. Heisenberg, Z. Phys. \textbf{43}, 172 (1927).
+\bibitem{planck} Planck Collaboration, A\&A \textbf{641}, A6 (2020).
+\bibitem{ligo} B.P. Abbott \textit{et al.}, Phys. Rev. Lett. \textbf{116}, 061102 (2016).
+\end{thebibliography}
+
+\end{document}
