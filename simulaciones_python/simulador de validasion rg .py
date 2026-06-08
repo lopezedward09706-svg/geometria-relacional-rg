@@ -792,7 +792,7 @@ if __name__ == "__main__":
     aprobadas, fallidas = validar_ecuaciones(ecuaciones)
     
     if fallidas == 0:
-        print("\n🎉 ¡TODAS LAS ECUACIONES APROBADAS! La RG es internamente consistente, somos la vrg.")
+        print("\n🎉 ¡TODAS LAS ECUACIONES APROBADAS! La RG es internamente consistente.")
     else:
         print(f"\n⚠️ Hay {fallidas} ecuaciones que requieren revisión.")
 
